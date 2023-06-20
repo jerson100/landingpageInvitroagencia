@@ -2,17 +2,17 @@
 
 /** Media Queries **/
 @mixin telefono {
-    @media (max-width: v.$telefono) {
+    @media (min-width: v.$telefono) {
         @content;
     }
 }
 @mixin tablet {
-    @media (max-width: v.$tablet) {
+    @media (min-width: v.$tablet) {
         @content;
     }
 }
 @mixin tabletlg {
-    @media (max-width: v.$tablet_lg) {
+    @media (min-width: v.$tablet_lg) {
         @content;
     }
 }
@@ -22,12 +22,12 @@
     }
 }
 @mixin desktoplg {
-    @media (max-width: v.$desktop_lg) {
+    @media (min-width: v.$desktop_lg) {
         @content;
     }
 }
 @mixin television {
-    @media (max-width: v.$television) {
+    @media (min-width: v.$television) {
         @content;
     }
 }

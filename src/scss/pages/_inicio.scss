@@ -120,3 +120,67 @@
         // }
     }
 }
+
+
+.WhatWeOffer{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &__content{
+
+    }
+    &__titleG{
+        font-family: v.$fblack;
+        text-align: center;
+        color: v.$azul;
+        margin-top: 0;
+    }
+    &__title{
+        font-family: v.$fblack;
+        color: v.$celesteoscuro;
+        font-size: 1.5rem;
+        max-width: 435px;
+        @include m.desktop{
+            font-size: 2.2rem;
+        }
+    }
+    &__description{
+        max-width: 350px;
+    }
+    &__row{
+        display: flex;
+        // flex-direction: column;
+        // gap: 3rem;
+        margin-bottom: 5rem;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        @include m.tablet{
+            gap: 8rem;
+        }
+        &:nth-child(2n - 1){
+            // flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            // @include m.tablet{
+            // }
+        }
+    }
+    &__col{
+        @include m.desktop{
+            width: 50%;
+        }
+        &:nth-child(2n){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__img{
+        width: 100%;
+        max-width: 250px;
+        @include m.desktop{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

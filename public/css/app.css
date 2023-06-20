@@ -407,7 +407,9 @@ p {
   padding: 1rem 1.4rem;
   color: #FFFFFF;
   border-radius: 23px;
+  background-color: #3333CC;
   cursor: pointer;
+  border-color: #FFFFFF;
 }
 .button-gosth {
   background-color: transparent;
@@ -595,5 +597,66 @@ p {
   border-radius: inherit;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1607843137);
   border-radius: 50%;
+}
+
+.WhatWeOffer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.WhatWeOffer__titleG {
+  font-family: "BiennaleBlack";
+  text-align: center;
+  color: #3333CC;
+  margin-top: 0;
+}
+.WhatWeOffer__title {
+  font-family: "BiennaleBlack";
+  color: #30CEB3;
+  font-size: 1.5rem;
+  max-width: 435px;
+}
+@media (min-width: 1024px) {
+  .WhatWeOffer__title {
+    font-size: 2.2rem;
+  }
+}
+.WhatWeOffer__description {
+  max-width: 350px;
+}
+.WhatWeOffer__row {
+  display: flex;
+  margin-bottom: 5rem;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .WhatWeOffer__row {
+    gap: 8rem;
+  }
+}
+.WhatWeOffer__row:nth-child(2n-1) {
+  flex-direction: row-reverse;
+}
+@media (min-width: 1024px) {
+  .WhatWeOffer__col {
+    width: 50%;
+  }
+}
+.WhatWeOffer__col:nth-child(2n) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.WhatWeOffer__img {
+  width: 100%;
+  max-width: 250px;
+}
+@media (min-width: 1024px) {
+  .WhatWeOffer__img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=app.css.map */
