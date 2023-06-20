@@ -482,4 +482,118 @@ p {
     transform: translateX(16px);
   }
 }
+
+.trust-us {
+  background-color: #F3F5F9;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.trust-us__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+@media (min-width: 1024px) {
+  .trust-us__content {
+    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+.trust-us__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .trust-us__item:nth-child(1) {
+    grid-column: 2/1 span;
+  }
+  .trust-us__item:nth-child(1) .trust-us__img {
+    transform: translateX(7%);
+  }
+  .trust-us__item:nth-child(2) {
+    grid-column: 5/2 span;
+    justify-content: flex-start;
+  }
+  .trust-us__item:nth-child(2) .trust-us__img {
+    transform: translateX(-50%);
+  }
+  .trust-us__item:nth-child(3) {
+    grid-column: 1/span 2;
+    justify-content: flex-start;
+  }
+  .trust-us__item:nth-child(3) .trust-us__img {
+    transform: translateY(50%);
+  }
+  .trust-us__item:nth-child(4) {
+    grid-column: 3/span 2;
+    grid-row: 2/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .trust-us__item:nth-child(5) {
+    grid-column: 6/span 1;
+  }
+  .trust-us__item:nth-child(5) .trust-us__img {
+    transform: translateY(-20%);
+  }
+  .trust-us__item:nth-child(6) {
+    grid-column: 2/span 1;
+  }
+  .trust-us__item:nth-child(6) .trust-us__img {
+    transform: translateY(50%);
+  }
+  .trust-us__item:nth-child(8) {
+    grid-column: 4/span 1;
+    grid-row: 4/span 1;
+  }
+  .trust-us__item:nth-child(8) .trust-us__img {
+    transform: scale(0.6);
+  }
+}
+.trust-us__center {
+  border-radius: 50%;
+  border: solid 14px #30CEB3;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1607843137);
+  width: 280px;
+  height: 280px;
+  color: #3333CC;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .trust-us__center {
+    width: 200px;
+    height: 200px;
+  }
+}
+.trust-us__center p {
+  font-size: 1.3rem;
+  line-height: 1rem;
+  font-family: "BiennaleRegular";
+}
+.trust-us__center p span {
+  font-family: "BiennaleBlack";
+}
+@media (min-width: 1024px) {
+  .trust-us__center {
+    width: 300px;
+    height: 300px;
+  }
+  .trust-us__center p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}
+.trust-us__img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: inherit;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1607843137);
+  border-radius: 50%;
+}
 /*# sourceMappingURL=app.css.map */
