@@ -1,0 +1,24 @@
+@use "base/variables" as v;
+
+.input{
+    padding: 1.1rem .8rem;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 35px;
+    border: solid 1px #00000029;
+    color: #00000029;
+    outline: none;
+}
+
+.textarea{
+    width: 100%;
+    padding: 1.3rem 1rem;
+    font-size: 1rem;
+    border-radius: 35px;
+    border: solid 1px #00000029;
+    min-height: 211px;
+    color: #00000029;
+    outline: none;
+    resize: none;
+    
+}
