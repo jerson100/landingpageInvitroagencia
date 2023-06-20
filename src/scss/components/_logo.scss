@@ -1,0 +1,14 @@
+@use "base/mixins" as m;
+
+.logo{
+    &__title{
+        // font-size: 1.1rem;  
+        font-size: 2rem;
+        @include m.desktop{
+        }      
+    }
+    &__subtitle{
+        font-size: .9rem;
+        text-transform: "uppercase";
+    }
+}

@@ -1,0 +1,25 @@
+@use "base/variables" as v;
+
+.header{
+    // padding-top: 1rem;
+    // padding-bottom: 1rem;
+    background-color: v.$negro;
+    color: v.$blanco;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__content{
+        height: 77px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+    &__left{
+        
+    }
+    &__right{
+
+    }
+}

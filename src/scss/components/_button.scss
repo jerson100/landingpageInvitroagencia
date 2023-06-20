@@ -1,0 +1,15 @@
+@use "base/variables" as v;
+
+.button{
+    font-size: 1rem;
+    padding: 1rem 1.4rem;
+    color: v.$blanco;
+    border-radius: 23px;
+    cursor: pointer;
+    &-gosth{
+        background-color: transparent;
+        border-color: v.$blanco;
+        
+    }
+}
+

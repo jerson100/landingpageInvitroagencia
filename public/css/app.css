@@ -308,6 +308,42 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "BiennaleRegular";
+  src: url(../../../public/fonts/BiennaleRegular.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "BiennaleBold";
+  src: url(../../../public/fonts/BiennaleBold.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "BiennaleLight";
+  src: url(../../../public/fonts/BiennaleLight.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "BiennaleBlack";
+  src: url(../../../public/fonts/BiennaleBlack.otf);
+  font-display: swap;
+}
+/** Media Queries **/
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "BiennaleRegular";
+  margin-top: 77px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 a {
   font-size: 1.1rem;
 }
@@ -320,7 +356,7 @@ h1 {
 h2 {
   font-size: 2.85em;
   line-height: 1.2em;
-  font-family: "AvenirBook";
+  font-family: "BiennaleBold";
 }
 h2.up {
   font-size: 3em;
@@ -335,6 +371,86 @@ h3 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+
+.header {
+  background-color: #000000;
+  color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__content {
+  height: 77px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.logo__title {
+  font-size: 2rem;
+}
+.logo__subtitle {
+  font-size: 0.9rem;
+  text-transform: "uppercase";
+}
+
+.button {
+  font-size: 1rem;
+  padding: 1rem 1.4rem;
+  color: #FFFFFF;
+  border-radius: 23px;
+  cursor: pointer;
+}
+.button-gosth {
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+
+.banner {
+  min-height: calc(100vh - 77px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .banner {
+    flex-direction: row;
+  }
+}
+.banner__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  .banner__content {
+    flex-direction: row;
+  }
+}
+.banner__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner__left {
+  max-width: 579px;
+  width: 100%;
+}
+.banner__title {
+  color: #30CEB3;
+  font-family: "BiennaleBlack";
+}
+.banner__img {
+  width: 100%;
+  transform: translateX(16px);
 }
 /*# sourceMappingURL=app.css.map */

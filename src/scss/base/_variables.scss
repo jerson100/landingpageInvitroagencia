@@ -1,13 +1,29 @@
+@font-face {
+    font-family: 'BiennaleRegular';
+    src: url(../../../public/fonts/BiennaleRegular.otf);
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BiennaleBold';
+    src: url(../../../public/fonts/BiennaleBold.otf);
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BiennaleLight';
+    src: url(../../../public/fonts/BiennaleLight.otf);
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BiennaleBlack';
+    src: url(../../../public/fonts/BiennaleBlack.otf);
+    font-display: swap;
+}
 
 // Fuentes
-$medium: 'AvenirMedium';
-$heavy: 'AvenirHeavy';
-$light: 'AvenirLight';
-$bold: 'AvenirBook';
-$black: 'AvenirBlack';
-
-$ampleBold: 'AmpleAlt';
-$ampleRegular: 'AmpleSoftRegular';
+$fregular: 'BiennaleRegular';
+$flight: 'BiennaleLight';
+$fbold: 'BiennaleBold';
+$fblack: 'BiennaleBlack';
 
 // Medidas de Media Queries
 $telefono: 480px;
@@ -18,8 +34,8 @@ $desktop_lg: 1200px;
 $television: 1462px;
 
 // Colores
-$blanco: #ffffff;
-$verde: #6CC24A;
+$blanco: #FFFFFF;
+$celeste: #30CEB3;
 $verde2: #56A543;
 $azul: #004C97;
 $gris: #807E7E;
@@ -27,4 +43,4 @@ $gris2: #707070;
 $gris3: #EEEEEE;
 $sombra: #00000014;
 $sombra2: #004C9729;
-$negro: #3D3D3D;
+$negro: #000000;
