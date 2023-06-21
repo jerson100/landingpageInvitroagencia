@@ -6,8 +6,11 @@
     width: 100%;
     border-radius: 35px;
     border: solid 1px #00000029;
-    color: #00000029;
+    color: v.$negro;
     outline: none;
+    &:focus{
+        outline: solid 1px v.$negro;
+    }
 }
 
 .textarea{
@@ -17,8 +20,10 @@
     border-radius: 35px;
     border: solid 1px #00000029;
     min-height: 211px;
-    color: #00000029;
+    color: v.$negro;
     outline: none;
     resize: none;
-    
+    &:focus{
+        outline: solid 1px v.$negro;
+    }
 }

@@ -125,6 +125,9 @@
 .WhatWeOffer{
     padding-top: 5rem;
     padding-bottom: 5rem;
+    background-image: url("../../../public/images/Enmascarar\ grupo\ 10799.png");
+    background-position: -5% 0;
+    background-size: cover;
     &__content{
 
     }
@@ -271,9 +274,52 @@
 .generate-exp{
     padding-top: 8rem;
     padding-bottom: 8rem;
-    background-image: url("../../../public/images/Enmascarar\ grupo\ 10798.jpg"), url("../../../public/images/Rectángulo\ 1802.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, cover;
+    background-color: v.$azul;
+    //     background-repeat: no-repeat, no-repeat;
+    //     background-size: cover, cover;
+    // background-color:  v.$azul;
+    
+    // background-image: url("../../../public/images/Enmascarar\ grupo\ 10798.jpg"), url("../../../public/images/Rectángulo\ 1802.jpg");
+    
+    // position: relative;
+    // &::before{
+    //     content:"";
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color:v.$azul;
+    //     z-index: -1;
+    // }
+    // &::after{
+    //     content:"";
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-image: url("../../../public/images/Enmascarar\ grupo\ 10798.png");
+    //     z-index: 2;
+    // }
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &__slider-buttons{
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1;
+        button{
+            outline: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
     &__title{
         margin: 0;
         color: v.$azul;
@@ -305,13 +351,17 @@
         padding-top: 10rem;
     }
     background-color: v.$celesteclaro;
-    background-image: url("../../../public/images/Enmascarar\ grupo\ 10797.jpg");
+    background-image: url("../../../public/images/Enmascarar\ grupo\ 10799.png");
     background-repeat: no-repeat;
     background-size: cover;
     &__content{
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        @include m.desktop{
+            width: 87%;
+            margin: auto;
+        }
     }
     &__title{
         font-family: v.$fblack;

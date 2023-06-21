@@ -2,7 +2,8 @@
 @use "base/mixins" as m;
 
 .footer{
-    background-image: url("../../../public/images//Enmascarar\ grupo\ 10796.jpg");
+    // background-image: url("../../../public/images//Enmascarar\ grupo\ 10796.jpg");
+    background-color: v.$negro;
     padding-top: 4rem;
     padding-bottom:4rem;
     &__content{
@@ -10,5 +11,9 @@
         gap: 1rem;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    &__logo{
+        max-width: 223px;
+        width: 100%;
     }
 }

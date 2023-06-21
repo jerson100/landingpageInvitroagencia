@@ -16,10 +16,15 @@ import Splide from '@splidejs/splide';
             type: 'slide',
             perPage: 1,
             perMove: 1,
-            arrows: false,
+            arrows: true,
             pagination: false,
             rewind: true,
-            autoplay: true
+            autoplay: true,
+            // isNavigation: true,
+            navigation: {
+                nextEl: '.generate-exp__slider-prev',
+                prevEl: '.generate-exp__slider-next',
+            },
         }).mount();
     })
 })(window);
