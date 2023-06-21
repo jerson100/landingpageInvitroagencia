@@ -354,8 +354,13 @@ a {
 }
 
 h1 {
-  font-size: 3.85em;
+  font-size: 2.5em;
   line-height: 1.2em;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.85em;
+  }
 }
 
 h2 {
@@ -395,22 +400,48 @@ p {
   align-items: center;
   gap: 2rem;
 }
+.logo {
+  letter-spacing: 0.2rem;
+}
 .logo__title {
   font-size: 2rem;
 }
 .logo__subtitle {
   font-size: 0.9rem;
-  text-transform: "uppercase";
+  text-transform: uppercase;
+}
+.logo-light {
+  color: #FFFFFF;
+}
+.logo-large {
+  letter-spacing: 0.3rem;
+  line-height: 1.2;
+}
+.logo-large .logo__title {
+  font-size: 4rem;
+}
+.logo-large .logo__subtitle {
+  font-size: 1.5rem;
 }
 
 .button {
   font-size: 1rem;
-  padding: 1rem 1.4rem;
+  padding: 0.6rem 1.4rem;
   color: #FFFFFF;
+  min-width: 200px;
   border-radius: 23px;
   background-color: #3333CC;
   cursor: pointer;
   border-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.button:hover .button__icon {
+  transform: translateX(0.4rem);
+}
+.button__icon {
+  transition: transform 0.25s linear;
 }
 .button-gosth {
   background-color: transparent;
@@ -509,6 +540,31 @@ p {
   color: rgba(0, 0, 0, 0.1607843137);
   outline: none;
   resize: none;
+}
+
+.footer {
+  background-image: url("../../../public/images//Enmascarar grupo 10796.jpg");
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.footer__content {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.iconWithInformation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.iconWithInformation__text {
+  color: #FFFFFF;
+  font-family: "BiennaleLight";
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .trust-us {
@@ -721,13 +777,14 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem 2.5rem;
+  padding: 2rem 1rem;
   border-radius: 20px;
   background-color: #F3F5F9;
 }
 @media (min-width: 1024px) {
   .quote__right {
     width: 80%;
+    padding: 2rem 2.5rem;
   }
 }
 .quote__form {
@@ -751,7 +808,7 @@ p {
 
 .generate-exp {
   padding-top: 8rem;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
   background-image: url("../../../public/images/Rectángulo 1802.jpg");
 }
 .generate-exp__title {
@@ -759,7 +816,7 @@ p {
   color: #3333CC;
   font-size: 1.2rem;
   color: #FFFFFF;
-  line-height: 1.1rem;
+  line-height: 1.2;
 }
 .generate-exp__title span {
   font-size: 2.4rem;

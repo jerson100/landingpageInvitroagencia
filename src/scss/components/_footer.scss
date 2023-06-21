@@ -1,0 +1,14 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer{
+    background-image: url("../../../public/images//Enmascarar\ grupo\ 10796.jpg");
+    padding-top: 4rem;
+    padding-bottom:4rem;
+    &__content{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

@@ -2,12 +2,24 @@
 
 .button{
     font-size: 1rem;
-    padding: 1rem 1.4rem;
+    padding: .6rem 1.4rem;
     color: v.$blanco;
+    min-width: 200px;
     border-radius: 23px;
     background-color: v.$azul;
     cursor: pointer;
     border-color: v.$blanco;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    &:hover{
+        .button__icon{
+            transform: translateX(.4rem);
+        }
+    }
+    &__icon{
+        transition: transform .250s linear;
+    }
     &-gosth{
         background-color: transparent;
         border-color: v.$blanco;

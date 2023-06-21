@@ -1,6 +1,8 @@
 @use "base/mixins" as m;
+@use "base/variables" as v;
 
 .logo{
+    letter-spacing: .2rem;
     &__title{
         // font-size: 1.1rem;  
         font-size: 2rem;
@@ -9,6 +11,19 @@
     }
     &__subtitle{
         font-size: .9rem;
-        text-transform: "uppercase";
+        text-transform: uppercase;
+    }
+    &-light{
+        color: v.$blanco;
+    }
+    &-large{
+        letter-spacing: .3rem;
+        line-height: 1.2;
+        .logo__title{
+            font-size: 4rem;
+        }
+        .logo__subtitle{
+            font-size: 1.5rem;
+        }
     }
 }
