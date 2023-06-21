@@ -29,6 +29,7 @@
         "terser": "^5.14.2"
     },
     "dependencies": {
+        "@splidejs/splide": "^4.1.4",
         "webpack-stream": "^7.0.0"
     }
 }

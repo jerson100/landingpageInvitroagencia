@@ -9,12 +9,35 @@
     background-color: v.$azul;
     cursor: pointer;
     border-color: v.$blanco;
-    display: flex;
+    display: inline-flex;
+    text-decoration: none;
     justify-content: center;
+    align-items: center;
     gap: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    // border-width: 1px;
+    // border-style: solid;
+    &::after{
+        content: "";
+        transition: transform .250s linear;
+        position: absolute;
+        width: 0;
+        left:0;
+        top: 0;
+        height: 100%;
+        background-color: #30CEB3;
+        z-index: -1;
+        width: 100%;
+        transform: translateX(-100%);
+    }
     &:hover{
         .button__icon{
             transform: translateX(.4rem);
+        }
+        &::after{
+            transform: translateX(0);
         }
     }
     &__icon{
@@ -23,10 +46,14 @@
     &-gosth{
         background-color: transparent;
         border-color: v.$blanco;
-        
+        border: solid 1px v.$blanco;
     }
     &-celeste{
         background-color: v.$celeste;
+        border: solid 1px v.$celeste;
+        &::after{
+            background-color: v.$azul;
+        }
     }
 }
 

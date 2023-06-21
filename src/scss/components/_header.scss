@@ -3,7 +3,14 @@
 .header{
     // padding-top: 1rem;
     // padding-bottom: 1rem;
-    background-color: v.$negro;
+    background-color: transparent;
+    transition: all 250ms linear;
+    // &:hover{
+    //     background-color: v.$negro;
+    // }
+    &-active{
+        background-color: v.$negro;
+    }
     color: v.$blanco;
     position: fixed;
     top: 0;
